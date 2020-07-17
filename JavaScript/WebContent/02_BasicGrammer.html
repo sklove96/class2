@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript 기본 문법</title>
+
+<script type="text/javascript">
+  
+   //스크립트의 개수 제한x, 위치 제한x
+   
+      /* 1. 출력  */
+      //alert("Hello, JavaScript!!");
+      //or
+      // alert('Hello JavaScript!!'); // 작은 따옴표도 가능& 세미콜론 없어도 됨
+   
+      
+      /* 2. 문자열 자료형 - 이스케이프시퀀스 문자 */
+      // alert("Hello \"JavaScript!!\""); //문자열 내에서 큰따옴표 출력
+      
+      
+      /* 3. 변수  */
+      //var radius = 10;  //정수
+      //alert(radius);
+      
+      //var pi = 3.14;     //실수
+      // alert(pi);
+      
+      //var varChar = 'A'; //문자
+      //alert(varChar);
+      
+      //var booleanType = true; //boolean
+      //alert(booleanType);
+      
+      //var string = "Hello World...";
+      //alert(string);    
+      
+      //alert(2*pi*radius); //원의 둘레 구하기
+      
+      
+      /* 4. 자료형 검사  */
+      
+      // 문자열
+      /* var name="홍길동";
+      alert(typeof(name)); */ //결과: string
+      
+      // 숫자열
+      /* var num=100;
+      alert(typeof(num)); */
+      
+      // 실수형
+      /* num=3.14;
+      alert(typeof(num));
+      
+      num=true;
+      altert(typeof(num)); //결과: boolean
+      
+      num=true;
+      alert(typeof(num)); */
+      
+      //alert(typeof(num));
+      
+      
+      
+      /* 4. 입력  */
+      var input = prompt('이름을 입력하세요.', '두글자 이상 입력');
+      alert(input+"님 반갑습니다");
+      
+      
+      //boolean 입력받을 때 사용하는 함수
+      var check = confirm('수락하시겠습니까?');
+      
+      if(check){
+    	  alert("수락하셨군요.");
+      }else{
+    	  alert("거절하셨군요.");   	  
+      }
+      
+      /* 5. 숫자와 문자열 자료형 반환 */
+      
+      //1. +연산자
+      alert(52+273);    //325    숫자열
+      
+      alert('52'+'273'); //52273 밑의 세 개는 모두 문자열화 됨
+      alert('52'+273); //52273
+      alert(52+'273'); //52273
+      
+      //2. 덧셈을 제외한 사칙연산      
+      alert('52' * 3) //156
+      alert('52' - 3)
+      alert('52' / 3)
+      alert('52' % 3)
+      
+      alert("홍길동" - 2) // NaN(Not a Number) : 숫자데이터가 아니에요!
+      
+      //3. 강제 자료형변환
+      // : 다른 자료형 -> 숫자변환 : Number() 함수 사용
+      // : 다른 자료형 -> 문자열변환 : String() 함수 사용
+      
+      var input = prompt("숫자를 입력하세요","숫자");
+      var num = Number(input);
+      alert(typeof(input)+" : "+num);
+      
+      /* 6. undifined 자료형 */
+      // 1. 존재하지 않는 것을 표현하는 자료형
+      alert(typeof(variable)); //입력으로 전달되는 자료형 반환해주는 키워드
+      undefined
+      
+      // 2. 변수를 선언했지만, 초기화하지 않았을때
+      
+      var variable;
+      alert(typeof(variable));
+      //동적 언어: 데이터를 담아주기 전까지 자료형으로 결정되지 않음 (R, 자바스크립트)
+      
+      /* 7. 산술연산자: +, -. *, /, % */
+      alert(27/35); //결과값 실수 반환
+      
+      /* 8. 비교연산자: <, >, <=, >=, ==, != */
+      alert(27 <= 35);
+      
+      /* 9. 논리연산자: &&, ||, ! */
+      alert(52 > 135 && 45 < 78);
+      
+      /* 10. 복합대입 연산: +=, -=, *=, /=, %= (누적)*/
+      
+      /* 11. 증감연산자 : ++, -- */
+      var number = 10;
+      
+      alert(number++); //10으로 출력
+      alert(++number); //11로 출력
+      
+      /* 12. 일치 연산자 */
+      alert(273 == '273');
+      
+      // === : 양변의 자료형과 값이 일치
+      // ==! : 양변의 자료형과 값이 다름
+
+      alert(273 === '273');
+      
+      
+      /* 13. 배열  */
+      
+      var array = [123, 'string', true, function(){}, {}, [150, 170]]; //자료형에 제한이 없음 & 배열 안의 배열도 가능
+      
+      for(var i=0; i < array.length; i++){
+    	  alert(array[i]);
+      }
+      
+     /* alert(array[0]);
+      alert(array[1]); : 이렇게 할 필요없이 위처럼 하면 됨 */
+      
+
+</script>
+
+</head>
+<body>
+
+<script type="text/javascript"> 
+</script>
+
+</body>
+</html>

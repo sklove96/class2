@@ -1,0 +1,10 @@
+function externalFileFunction(){
+  alert ('externalFileFunction() 호출');}
+  
+var externalFileVariable = 'HelloWolrd';
+
+alert('Import External Script, Complete!!') // 출력문
+}
+  
+
+
